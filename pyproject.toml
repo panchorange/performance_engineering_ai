@@ -1,0 +1,24 @@
+[project]
+name = "uv-mypy-ruff-template"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12.9"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "mypy>=1.19.1",
+    "pre-commit>=4.5.1",
+    "ruff>=0.14.14",
+]
+
+[tool.mypy]
+# 厳格な型チェックを有効化
+strict = true
+# Python 3.12の機能を使用
+python_version = "3.12"
+# エラーメッセージを詳細に表示
+show_error_codes = true
+# 型チェック対象外のライブラリに対する警告を抑制
+warn_unused_ignores = true
